@@ -1,0 +1,30 @@
+{% block sidebar %}
+
+<!-- Sidebar Widgets Column -->
+<div class="col-md-4 float-right">
+  <div class="card my-4">
+    <h5 class="card-header">About Us</h5>
+    <div class="card-body">
+      <p class="card-text">
+        This totally legit blog is scrambled together in 1 hour yeasterday night
+        at 11 pm. :D
+      </p>
+      <p class="card-text">
+        Hice este blog legítimo ayer en una hora a las once de la noche. :D
+      </p>
+      <a href="#" onclick="myFunction()" class="btn btn-danger">Saber más</a>
+      <span class="popuptext" id="myPopup"
+        >Kelli es mi profesor <br />
+        favorito. :P</span
+      >
+    </div>
+  </div>
+</div>
+<script>
+  // When the user clicks on <div>, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+</script>
+{% endblock sidebar %}
